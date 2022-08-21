@@ -75,7 +75,7 @@ architectures.each {
                         sh 'sudo chown jenkins:jenkins ..'
                         sh 'sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1'
                         sh 'debuild-pbuilder  -i -us -uc -b'
-                        sh 'mkdir -p $WORKSPACE/dist/debian/ ; rm -rf $WORKSPACE/dist/debian/* ; for deb in $(cat debian/files | awk \'{print $1}\'); do mv "../$deb" $WORKSPACE/dist/debian/; done'
+                        sh 'mkdir -p $WORKSPACE/dist/debian/ ; rm -rf $WORKSPACE/dist/debian/* ; for deb in $(cat debian/files | awk \'{print $1}\'); do mv -v "../$deb" $WORKSPACE/dist/debian/; done'
                     }
                 }
 
