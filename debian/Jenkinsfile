@@ -2,7 +2,7 @@
 
 
 String[] architectures = ['amd64','armel','aarch64']
-String[] distributions = ['debian:buster', 'debian:bullseye', 'ubuntu:focal', 'ubuntu:jammy']
+String[] distributions = ['debian:buster', 'debian:bullseye', 'ubuntu:focal']
 
 String vendor = 'vitexsoftware'
 String distribution = ''
