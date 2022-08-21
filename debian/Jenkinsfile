@@ -92,7 +92,7 @@ architectures.each {
                 }
                 stage('Copy artifacts ' + architecture + ' ' + distribution ) {
                     buildImage.inside {
-                        sh 'mv $WORKSPACE/dist/debian/*.deb $WORKSPACE'
+                        sh 'mv -v $WORKSPACE/dist/debian/*.deb $WORKSPACE'
                     }
                 }
             }
