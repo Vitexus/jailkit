@@ -2,7 +2,7 @@ Source: jailkit
 Section: admin
 Priority: optional
 Maintainer: Olivier Sessink <olivier@bluefish.openoffice.nl>
-Build-Depends: debhelper (>= 4.0.0)
+Build-Depends: debhelper (>= 4.0.0), python3
 Standards-Version: 3.6.2
 
 Package: jailkit
