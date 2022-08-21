@@ -57,6 +57,7 @@ architectures.each {
         def buildImage = ''
 
         node( architecture ) {
+
             ansiColor('xterm') {
                 stage('Checkout ' + architecture + ' ' + distribution) {
                     buildImage = docker.image(vendor + '/' + distribution)

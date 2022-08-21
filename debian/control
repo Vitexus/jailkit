@@ -7,7 +7,7 @@ Standards-Version: 3.6.2
 
 Package: jailkit
 Architecture: any
-Depends: ${shlibs:Depends}, python3
+Depends: ${shlibs:Depends}, python3-minimal
 Description: chroot jail utilities
  Jailkit is a set of utilities to create chroot jails for users, processes
  and daemons. There are utilities to build a jail, to test a jail, and 
