@@ -26,7 +26,7 @@ node() {
                     if ( key == 'Architecture' ) {
 
                         if (value == 'any') {
-                            architectures = ['amd64', 'armhf', 'aarch64']
+                            architectures = ['amd64']
                         } else {
                             architectures = [value]
                         }
